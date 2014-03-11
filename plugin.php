@@ -4,7 +4,7 @@
   Plugin Name: Estimated Post Reading Time
   Plugin URI: http://wordpress.org/extend/plugins/estimated-post-reading-time/
   Description: Calculates an average required time to complete reading a post.
-  Version: 1.0
+  Version: 1.1
   Author: Konstantinos Kouratoras
   Author URI: http://www.kouratoras.gr
   Author Email: kouratoras@gmail.com
@@ -49,9 +49,6 @@ class EstimatedPostReadingTime {
 
 		//Shortcode
 		add_action('init', array(&$this, 'register_estimate_time_shortcode'));
-
-		//Content filter
-		add_filter('the_content', array($this, 'estimate_time'));
 	}
 
 	function estimate_time() {
@@ -62,8 +59,7 @@ class EstimatedPostReadingTime {
 		$content_words = str_word_count($content);	
 		$estimated_minutes = floor($content_words / $this->wpm);
 		
-		$result .= $options['paragraph']==1 ? "<p>" : "";
-		$result .= isset($options['prefix']) ? $options['prefix'] : '';
+		$result = '';
 
 		if ($estimated_minutes < 1)
 			$result .= " ".__('Less than a minute', 'estimated-post-reading-time-locale');
@@ -75,10 +71,6 @@ class EstimatedPostReadingTime {
 		}
 		else
 			$result .= $estimated_minutes." ". __('minutes', 'estimated-post-reading-time-locale');
-
-		$result .= $options['paragraph']==1 ? "</p>" : "";
-
-		$result .= get_the_content();
 
 		return $result;
 	}

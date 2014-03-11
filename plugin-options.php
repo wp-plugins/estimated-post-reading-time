@@ -42,18 +42,6 @@ function plugin_options_do_page() {
 						<label class="description" for="plugin_options[wpm]"><?php _e('Type words per minute', 'estimated-post-reading-time-locale'); ?></label>
 					</td>
 				</tr>
-				<tr valign="top"><th scope="row"><?php _e('Prefix', 'estimated-post-reading-time-locale'); ?></th>
-					<td>
-						<input id="plugin_options[prefix]" class="regular-text" type="text" name="plugin_options[prefix]" value="<?php esc_attr_e($options['prefix']); ?>" />
-						<label class="description" for="plugin_options[prefix]"><?php _e('Type what will be shown before time', 'estimated-post-reading-time-locale'); ?></label>
-					</td>
-				</tr>
-				<tr valign="top"><th scope="row"><?php _e('Paragraph', 'estimated-post-reading-time-locale'); ?></th>
-					<td>
-						<input name="plugin_options[paragraph]" type="checkbox" value="1" <?php checked('1', $options['paragraph']); ?> />
-						<label class="description" for="plugin_options[paragraph]"><?php _e('Check this if you want to enclose estimated time in paragraph tags', 'estimated-post-reading-time-locale'); ?></label>
-					</td>
-				</tr>
 			</table>
 
 			<p class="submit">
@@ -72,8 +60,6 @@ function plugin_options_validate($input) {
 
 	// Consumer Key
 	$input['wpm'] = wp_filter_nohtml_kses($input['wpm']);
-	$input['prefix'] = wp_filter_nohtml_kses($input['prefix']);
-	$input['paragraph'] = ( $input['paragraph'] == 1 ? 1 : 0 );
 
 	return $input;
 }
