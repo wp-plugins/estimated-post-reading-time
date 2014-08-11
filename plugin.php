@@ -46,7 +46,9 @@ class EstimatedPostReadingTime {
 	function estimate_time() {
 		
 		$wpm = get_option('eprt_words_per_minute', 250);
-		$content = strip_tags(get_the_content());
+		
+		global $post;
+		$content = strip_tags($post->post_content);		
 		$content_words = str_word_count($content);
 		$estimated_minutes = floor($content_words / $wpm);
 		
