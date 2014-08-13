@@ -8,8 +8,8 @@ Donate link:
 Tags: post, reading, estimated, time
 Requires at least: 3.2
 Tested up to: 3.9.2
-Stable tag: 1.2.1
-Version: 1.2.1
+Stable tag: 1.3
+Version: 1.3
 License: GPLv2 or later
 
 Calculates an average required time to complete reading a post.
@@ -38,6 +38,12 @@ The keyword of the shortcode is [est_time]
 3. Settings page
 
 == Changelog ==
+
+= 1.3 =
+* Added "show in homepage" option
+* Added "show in archive page" option
+* Added "all letters lowercase" option
+* Code reorganization
 
 = 1.2.1 = 
 * Estimated time in post excerpt bug fixed
