@@ -33,9 +33,9 @@ The keyword of the shortcode is [est_time]
 
 == Screenshots ==
 
-1. Estimated post reading time in post
+1. Settings page
 2. Shortcode usage
-3. Settings page
+3. Estimated post reading time in post
 
 == Changelog ==
 
