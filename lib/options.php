@@ -50,7 +50,10 @@ class EstimatedPostReadingTimeOptions {
 		?>
 
 		<div class="wrap">
-			<h2><?php _e('Estimated Post Reading Time Options', 'att_trans_domain'); ?></h2>
+			<h2><?php _e('Estimated Post Reading Time', 'estimated-post-reading-time-locale'); ?></h2>
+			
+			<h3><?php _e('Settings', 'estimated-post-reading-time-locale'); ?></h3>
+			
 			<form name="att_img_options" method="post" action="<?php echo str_replace('%7E', '~', $_SERVER['REQUEST_URI']); ?>">
 				<input type="hidden" name="<?php echo $hidden_field_name; ?>" value="Y">
 
@@ -65,7 +68,7 @@ class EstimatedPostReadingTimeOptions {
 					</select>
 				</p>
 
-				<p><label for=""><?php _e('Show in archive', 'estimated-post-reading-time-locale'); ?>:</label>
+				<p><label for=""><?php _e('Show in archives', 'estimated-post-reading-time-locale'); ?>:</label>
 					<select name="<?php echo $opt_name['eprt_show_in_archive']; ?>">
 						<option value="1" <?php echo ($opt_val['eprt_show_in_archive'] == "1") ? 'selected="selected"' : ''; ?> ><?php _e('Yes', 'estimated-post-reading-time-locale'); ?></option>
 						<option value="0" <?php echo ($opt_val['eprt_show_in_archive'] == "0") ? 'selected="selected"' : ''; ?> ><?php _e('No', 'estimated-post-reading-time-locale'); ?></option>
@@ -81,6 +84,10 @@ class EstimatedPostReadingTimeOptions {
 
 				<p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Save Changes', 'estimated-post-reading-time-locale'); ?>"></p>
 			</form>
+			
+			<h3><?php _e('Shortcode Usage', 'estimated-post-reading-time-locale'); ?></h3>
+			
+			<p>In order to show the estimated post reading time in your post/page insert the <code>[est_time]</code> shortcode anywhere in the content.</p>
 
 			<?php
 		}
