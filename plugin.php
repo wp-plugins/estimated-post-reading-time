@@ -4,7 +4,7 @@
   Plugin Name: Estimated Post Reading Time
   Plugin URI: http://wordpress.org/extend/plugins/estimated-post-reading-time/
   Description: Calculates an average required time to complete reading a post.
-  Version: 1.3.2
+  Version: 1.3.3
   Author: Konstantinos Kouratoras
   Author URI: http://www.kouratoras.gr
   Author Email: kouratoras@gmail.com
@@ -49,7 +49,7 @@ class EstimatedPostReadingTime {
 	function plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'estimated-post-reading-time-locale',
+			'estimated-post-reading-time',
 			false,
 			dirname( plugin_basename( __FILE__ ) ) . '/languages'
 			);
@@ -83,21 +83,21 @@ class EstimatedPostReadingTime {
 		$estimated_minutes = floor($content_words / $wpm);
 
 		if ($estimated_minutes < 1) {
-			$result = ($lowercase == '1' ? __("less than a minute", "estimated-post-reading-time-locale") : __("Less than a minute", "estimated-post-reading-time-locale"));
+			$result = ($lowercase == '1' ? __("less than a minute", "estimated-post-reading-time") : __("Less than a minute", "estimated-post-reading-time"));
 		}
 		else if ($estimated_minutes > 60) {
 			if ($estimated_minutes > 1440){
-				$result = ($lowercase == '1' ? __("more than a day", "estimated-post-reading-time-locale") : __("More than a day", "estimated-post-reading-time-locale"));
+				$result = ($lowercase == '1' ? __("more than a day", "estimated-post-reading-time") : __("More than a day", "estimated-post-reading-time"));
 			}
 			else {
-				$result = floor($estimated_minutes / 60) . " " . __("hours", "estimated-post-reading-time-locale");
+				$result = floor($estimated_minutes / 60) . " " . __("hours", "estimated-post-reading-time");
 			}
 		}
 		else if ($estimated_minutes == 1) {
-			$result = $estimated_minutes . " " . __("minute", "estimated-post-reading-time-locale");
+			$result = $estimated_minutes . " " . __("minute", "estimated-post-reading-time");
 		}
 		else {
-			$result = $estimated_minutes . " " . __("minutes", "estimated-post-reading-time-locale");
+			$result = $estimated_minutes . " " . __("minutes", "estimated-post-reading-time");
 		}
 
 

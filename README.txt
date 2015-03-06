@@ -7,9 +7,9 @@ Author: Konstantinos Kouratoras
 Donate link: 
 Tags: post, reading, estimated, time
 Requires at least: 3.2
-Tested up to: 4.0
-Stable tag: 1.3.2
-Version: 1.3.2
+Tested up to: 4.1.1
+Stable tag: 1.3.3
+Version: 1.3.3
 License: GPLv2 or later
 
 Calculates an average required time to complete reading a post.
@@ -17,6 +17,10 @@ Calculates an average required time to complete reading a post.
 == Description ==
 
 Calculates an average required time to complete reading a post.
+
+= Translations included =
+* Dutch
+* Greek
 
 == Installation ==
 
@@ -38,6 +42,10 @@ The keyword of the shortcode is [est_time]
 3. Estimated post reading time in post
 
 == Changelog ==
+
+= 1.3.3 =
+* Fixed i18n issues
+* Added Dutch, Greek translation
 
 = 1.3.2 =
 * Compatibility with WordPress 4.0
