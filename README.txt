@@ -21,6 +21,10 @@ Calculates an average required time to complete reading a post.
 = Translations included =
 * Dutch
 * Greek
+* French
+
+New translations are very welcome - please submit them via [WP-Translations](http://wp-translations.org/ "WP-Translations").
+This plugin's WP-Translations page is [https://www.transifex.com/projects/p/estimated-post-reading-time/](https://www.transifex.com/projects/p/estimated-post-reading-time/ "WP-Translations").
 
 == Installation ==
 
@@ -45,7 +49,7 @@ The keyword of the shortcode is [est_time]
 
 = 1.3.3 =
 * Fixed i18n issues
-* Added Dutch, Greek translation
+* Added Dutch, Greek, French translation
 
 = 1.3.2 =
 * Compatibility with WordPress 4.0
