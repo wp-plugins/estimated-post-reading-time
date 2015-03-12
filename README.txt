@@ -49,7 +49,7 @@ The keyword of the shortcode is [est_time]
 == Changelog ==
 
 = 1.3.4 =
-* Added Portuguese (Brazil) translation (from [http://bsconsult.com.br/](BSConsult) team)
+* Added Portuguese (Brazil) translation (from [BSConsult](http://bsconsult.com.br/) team)
 
 = 1.3.3 =
 * Fixed i18n issues
