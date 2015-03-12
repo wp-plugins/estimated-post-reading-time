@@ -8,8 +8,8 @@ Donate link:
 Tags: post, reading, estimated, time
 Requires at least: 3.2
 Tested up to: 4.1.1
-Stable tag: 1.3.3
-Version: 1.3.3
+Stable tag: 1.3.4
+Version: 1.3.4
 License: GPLv2 or later
 
 Calculates an average required time to complete reading a post.
@@ -22,6 +22,7 @@ Calculates an average required time to complete reading a post.
 * Dutch
 * Greek
 * French
+* Portuguese (Brazil)
 
 New translations are very welcome - please submit them via [WP-Translations](http://wp-translations.org/ "WP-Translations").
 This plugin's WP-Translations page is [https://www.transifex.com/projects/p/estimated-post-reading-time/](https://www.transifex.com/projects/p/estimated-post-reading-time/ "WP-Translations").
@@ -46,6 +47,9 @@ The keyword of the shortcode is [est_time]
 3. Estimated post reading time in post
 
 == Changelog ==
+
+= 1.3.4 =
+* Added Portuguese (Brazil) translation (from [http://bsconsult.com.br/](BSConsult) team)
 
 = 1.3.3 =
 * Fixed i18n issues
