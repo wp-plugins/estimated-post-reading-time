@@ -20,8 +20,11 @@ Calculates an average required time to complete reading a post.
 
 = Translations included =
 * Dutch
+* German
 * Greek
 * French
+* Italian
+* Polish
 * Portuguese (Brazil)
 
 New translations are very welcome - please submit them via [WP-Translations](http://wp-translations.org/ "WP-Translations").
