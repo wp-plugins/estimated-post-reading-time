@@ -7,9 +7,9 @@ Author: Konstantinos Kouratoras
 Donate link: 
 Tags: post, reading, estimated, time
 Requires at least: 3.2
-Tested up to: 4.1.1
-Stable tag: 1.3.4
-Version: 1.3.4
+Tested up to: 4.3
+Stable tag: 1.3.5
+Version: 1.3.5
 License: GPLv2 or later
 
 Calculates an average required time to complete reading a post.
@@ -47,6 +47,9 @@ The keyword of the shortcode is [est_time]
 3. Estimated post reading time in post
 
 == Changelog ==
+
+= 1.3.5 =
+* Added German, Italian, Polish translations
 
 = 1.3.4 =
 * Added Portuguese (Brazil) translation (from [BSConsult](http://bsconsult.com.br/) team)
